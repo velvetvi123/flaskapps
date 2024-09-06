@@ -1,0 +1,92 @@
+/* Réglages de base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.theladders.com%2Fwp-content%2Fuploads%2Fcoder_190517.jpg&f=1&nofb=1&ipt=fe2adc88b410d36ac84239dce05dad1cca16a5c08c2a8cc177dc75888e38fc96&ipo=images') no-repeat center center fixed;
+    background-size: cover;
+    color: #000000; /* Couleur de texte par défaut en noir */
+}
+
+header {
+    background-color: #27ae60; /* Vert */
+    color: #ffffff; /* Texte en blanc sur l'en-tête */
+    text-align: center;
+    padding: 60px 0;
+}
+
+footer {
+    background-color: #27ae60; /* Vert */
+    color: #ffffff; /* Texte en blanc sur le pied de page */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style pour l'image */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #27ae60; /* Bordure verte autour de l'image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+/* Style pour le bouton */
+.btn-outline-primary {
+    border-color: #27ae60; /* Bordure verte */
+    color: #27ae60; /* Texte en vert */
+}
+
+.btn-outline-primary:hover {
+    background-color: #27ae60; /* Fond vert au survol */
+    color: #ffffff; /* Texte en blanc au survol */
+}
+
+/* Style pour la section About Me */
+h2 {
+    font-size: 3rem; /* Taille du texte en gros */
+    color: #27ae60; /* Couleur du texte en vert */
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+ul {
+    font-size: 1.2rem; /* Taille du texte pour les éléments de la liste */
+    margin: 0 auto;
+    max-width: 600px;
+    color: #000000; /* Texte en noir */
+}
+
+p {
+    font-size: 1.2rem; /* Taille du texte pour le paragraphe */
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #000000; /* Texte en noir */
+}
+
+/* Animation pour la section About Me */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Ajouter des styles pour la liste et les paragraphes */
+ul, p {
+    color: #000000; /* Texte en noir */
+}
+
+
+
+
+
+
+
