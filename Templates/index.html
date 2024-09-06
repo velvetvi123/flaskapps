@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Personal Page</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers le fichier CSS personnalisé -->
+    <link href="{{ url_for('static', filename='styles/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <h1 class="display-4">Welcome to My Personal Page</h1>
+            <p class="lead">Explore my work and background</p>
+        </div>
+    </header>
+
+    <!-- Section principale -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-4 text-center animate-on-scroll">
+                <!-- Remplace l'URL de l'image par le chemin relatif -->
+                <img src="{{ url_for('static', filename='images/ma photo.jpeg') }}" class="img-fluid rounded-circle" alt="Your Photo">
+            </div>
+            <div class="col-md-8 animate-on-scroll">
+                <h2>About Me</h2>
+                <p>Hello, I am Yahya Oubedda, a 22-year-old IT developer studying at ALX Africa in Software Engineering. Here is more about me:</p>
+                <ul>
+                    <li><strong>Role:</strong> Full Stack Developer (Front-End and Back-End)</li>
+                    <li><strong>Education:</strong> Studying Software Engineering at ALX Africa</li>
+                    <li><strong>Skills:</strong> Python (Flask, Django), C, Node.js, JavaScript, HTML, CSS</li>
+                    <li><strong>Expertise:</strong> Server-side development, DevOps, Bash scripting, Testing, Docker</li>
+                    <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+                </ul>
+                <p>Feel free to explore my work and contributions on GitHub: <a href="https://github.com/velvetvi123" target="_blank" class="btn btn-outline-primary">Visit GitHub</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yahya Oubedda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lien vers Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lien vers le fichier JavaScript personnalisé -->
+    <script src="{{ url_for('static', filename='scripts/scripts.js') }}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
